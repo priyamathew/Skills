@@ -1,6 +1,6 @@
 # Priya Skills
 
-A collection of reusable skills for Claude Code that I am using help automate common workflows, extract insights from data, and accelerate product work. 
+A collection of reusable skills for Claude Code that I am using help automate common workflows, extract insights from data, and accelerate my work. Some of it will be about product work and some for the side gig I have teaching on Maven. 
 
 ## What are Skills?
 
