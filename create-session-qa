@@ -27,7 +27,7 @@ You need two files from your session:
 
 ### Basic command
 ```
-I have a session transcript (video.vtt) and chat transcript (chat.txt) on my Desktop.
+I have a session transcript (video.vtt) and chat transcript (chat.txt) in the project folder.
 Create a Q&A doc that lists all questions and my answers, plus helpful tips from
 others in the chat with attribution.
 ```
