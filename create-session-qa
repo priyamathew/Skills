@@ -1,0 +1,119 @@
+# Create Session Q&A Document
+
+## Description
+Creates a comprehensive Q&A document from session recording transcripts (VTT) and chat transcripts, extracting questions, answers, and key takeaways with proper attribution.
+
+## What it does
+1. Reads video transcript (.vtt) and chat transcript (.txt) files
+2. Extracts all questions asked during the session
+3. Pairs questions with the presenter's answers
+4. Includes helpful tips from chat participants with attribution
+5. Generates organized key takeaways from the Q&A
+6. Formats everything in a clean, numbered markdown document
+7. Protects privacy by using first name + last initial only
+
+## When to use
+- After hosting a webinar, workshop, or live teaching session
+- When you want to create shareable documentation from a recording
+- To capture knowledge from Q&A sessions for future reference
+- When you need to provide attendees with a written summary
+
+## Usage
+
+### Required files
+You need two files from your session:
+1. **Video transcript** (.vtt file) - Contains timestamped dialogue
+2. **Chat transcript** (.txt file) - Contains chat messages with timestamps
+
+### Basic command
+```
+I have a session transcript (video.vtt) and chat transcript (chat.txt) on my Desktop.
+Create a Q&A doc that lists all questions and my answers, plus helpful tips from
+others in the chat with attribution.
+```
+
+### The tool will:
+1. Read both transcript files
+2. Identify all questions from the Q&A portion
+3. Extract your answers from the video transcript
+4. Pull relevant contributions from chat participants
+5. Create a structured markdown document with:
+   - Table of Contents
+   - Questions organized by topic
+   - Your answers
+   - Chat participant contributions (attributed)
+   - Key takeaways summary
+   - Tool recommendations (if applicable)
+
+### Options you can request
+- **Number questions**: "Add numbers to the questions (Q1, Q2, etc.)"
+- **Privacy protection**: "Use first name and last initial only"
+- **Remove sections**: "Remove troubleshooting section" or "Remove unanswered questions"
+- **Keep only your insights**: "Remove chat participant contributions, keep only my answers"
+- **Extract key takeaways**: "Give me just the key takeaways to copy/paste"
+
+## Output format
+The document includes:
+
+```markdown
+# [Session Title] - Q&A Document
+
+## Table of Contents
+1. [Topic Area 1]
+2. [Topic Area 2]
+...
+
+## [Topic Area 1]
+
+### Q1: [Question text]
+**Asked by:** [Name]
+
+**[Presenter]'s Answer:**
+[Answer content]
+
+**Tips from Chat Participants:**
+**[Name]:** "[Their tip]"
+
+---
+
+## Key Takeaways from Q&A
+
+### [Category]
+- **[Key point]** - [Explanation]
+
+---
+
+## Additional Resources
+[Links, tools mentioned, etc.]
+```
+
+## Example
+
+**Input:**
+```
+I have "Prototyping LLM LL transcript.vtt" and "Prototyping LLM chat transcript.txt"
+on my Desktop. Create a Q&A doc with all questions and answers plus helpful tips
+from chat participants with attribution.
+```
+
+**Output:**
+A markdown file with:
+- 20+ questions organized by topic (Version Control, LLM Integration, Testing, etc.)
+- Your detailed answers
+- Helpful tips from Rob P., Gary G., Mateo C., etc. with attribution
+- Comprehensive key takeaways organized by category
+- Tool recommendations
+- Resources and links mentioned
+
+## Tips
+- The tool automatically removes unanswered questions and troubleshooting content unless you ask to keep them
+- Questions are automatically organized into logical topic areas
+- Chat contributions are only included if they add value beyond your answer
+- Names are automatically formatted as "First L." for privacy
+- Key takeaways focus on actionable insights, not generic statements
+
+## Notes
+- Works best with Zoom transcripts but adaptable to other formats
+- Requires both video transcript and chat for full functionality
+- Can work with just video transcript if chat not available
+- Output is a markdown (.md) file that's easy to share and format
